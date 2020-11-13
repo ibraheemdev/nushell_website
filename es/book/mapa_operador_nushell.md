@@ -6,7 +6,7 @@ Nota: esta tabla asume Nu 0.14.1 o posterior.
 
 
 | NuShell  | SQL      | Python              | .Net LINQ (C#)       | PowerShell             | Bash               |
-| -------- | -------- | --------------------| -------------------- | ---------------------- | ------------------ |
+| -------- | -------- | ------------------- | -------------------- | ---------------------- | ------------------ |
 | =        | =        | ==                  | ==                   | -eq, -is               | -eq                |
 | !=       | !=, <>   | !=                  | !=                   | -ne, -isnot            | -ne                |
 | <        | <        | <                   | <                    | -lt                    | -lt                |
@@ -14,7 +14,7 @@ Nota: esta tabla asume Nu 0.14.1 o posterior.
 | >        | >        | >                   | >                    | -gt                    | -gt                |
 | >=       | >=       | >=                  | >=                   | -ge                    | -ge                |
 | =~       | like     | re, in, startswith  | Contains, StartsWith | -like, -contains       | =~                 |
-| !~       | not like | not in              | Except               | -notlike, -notcontains | ! <str1> =~ <str2> |
+| !~       | not like | not in              | Except               | -notlike, -notcontains | ! "str1" =~ "str2" |
 | +        | +        | +                   | +                    | +                      | +                  |
 | -        | -        | -                   | -                    | -                      | -                  |
 | *        | *        | *                   | *                    | *                      | *                  |

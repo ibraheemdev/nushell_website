@@ -14,7 +14,7 @@ Note: this table assumes Nu 0.14.1 or later.
 | >        | >        | >                   | >                    | -gt                    | -gt                |
 | >=       | >=       | >=                  | >=                   | -ge                    | -ge                |
 | =~       | like     | re, in, startswith  | Contains, StartsWith | -like, -contains       | =~                 |
-| !~       | not like | not in              | Except               | -notlike, -notcontains | ! <str1> =~ <str2> |
+| !~       | not like | not in              | Except               | -notlike, -notcontains | ! "str1" =~ "str2" |
 | +        | +        | +                   | +                    | +                      | +                  |
 | -        | -        | -                   | -                    | -                      | -                  |
 | *        | *        | *                   | *                    | *                      | *                  |
