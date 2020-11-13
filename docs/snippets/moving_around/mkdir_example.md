@@ -1,0 +1,3 @@
+```
+> mkdir new_directory
+```

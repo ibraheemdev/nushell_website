@@ -1,0 +1,3 @@
+```
+> cd new_directory
+```
