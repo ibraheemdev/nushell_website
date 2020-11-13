@@ -1,11 +1,4 @@
----
-layout: content
-title: Índice
-prev: Idiomas
-next: Instalación
-link_prev: /
-link_next: /es/instalacion.html
----
+# Índice
 
 * [Instalación](instalacion.md) - Instalando nushell
 * [Introducción](introduccion.md) - Empezando

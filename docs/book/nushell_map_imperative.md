@@ -1,11 +1,4 @@
----
-layout: content
-title: Nu map from imperative languages
-prev: Shells/DSL map
-next: Functional map
-link_prev: /en/nushell_map.html
-link_next: /en/nushell_map_functional.html
----
+# Nu map from imperative languages
 
 The idea behind this table is to help you understand how Nu built-ins and plug-ins relate to imperative languages. We've tried to produce a map of all the Nu commands and what their equivalents are in other languages. Contributions are welcome.
 

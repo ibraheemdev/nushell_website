@@ -1,11 +1,4 @@
----
-layout: content
-title: Metadata
-prev: Environment
-next: Shells
-link_prev: /en/environment.html
-link_next: /en/shells_in_shells.html
----
+# Metadata
 
 In using Nu, you may have come across times where you felt like there was something extra going on behind the scenes. For example, let's say that you try to open a file that Nu supports only to forget and try to convert again:
 

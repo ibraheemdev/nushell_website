@@ -1,11 +1,4 @@
----
-layout: content
-title: Entorno
-prev: Matemáticas
-next: Metadatos
-link_prev: /es/matematicas.html
-link_next: /es/metadatos.html
----
+# Entorno
 
 Una tarea común al usar una shell es controlar el ambiente de entorno que aplicaciones externas usarán. Comúnmente esto sucede automáticamente, a medida que el entorno se empaqueta y se entrega a la aplicación externa cuando se inicia. Sin embargo, hay veces que vamos a desear tener control más preciso sobre qué variables de entorno una aplicación pueda ver.
 

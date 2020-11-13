@@ -1,11 +1,4 @@
----
-layout: content
-title: 設定
-prev: パイプライン
-next: メタデータ
-link_prev: /ja/pipeline.html
-link_next: /ja/metadata.html
----
+# 設定
 
 Nuには、見た目や挙動を変更させるための内部的な変数があります。
 以下がそのリストです。

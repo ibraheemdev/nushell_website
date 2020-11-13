@@ -1,11 +1,4 @@
----
-layout: content
-title: Nu map from functional languages
-prev: Imperative map 
-next: Operator map
-link_prev: /en/nushell_map_imperative.html
-link_next: /en/nushell_operator_map.html 
----
+# Nu map from functional languages
 
 The idea behind this table is to help you understand how Nu built-ins and plug-ins relate to functional languages. We've tried to produce a map of all the Nu commands and what their equivalents are in other languages. Contributions are welcome.
 

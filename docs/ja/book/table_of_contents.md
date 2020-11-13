@@ -1,11 +1,4 @@
----
-layout: content
-title: 目次
-prev: 言語
-next: インストール
-link_prev: /
-link_next: /ja/installation.html
----
+# 目次
 
 * [インストール](installation.md) - nushellのインストール
 * [はじめに](introduction.md) - nushellをはじめよう

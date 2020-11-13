@@ -1,11 +1,4 @@
----
-layout: content
-title: Nu map from other shells and domain specific languages
-prev: Coming from bash
-next: Imperative map
-link_prev: /en/coming_from_bash.html
-link_next: /en/nushell_map_imperative.html 
----
+# Nu map from other shells and domain specific languages
 
 The idea behind this table is to help you understand how Nu built-ins and plug-ins relate to other known shells and domain specific languages. We've tried to produce a map of all the Nu commands and what their equivalents are in other languages. Contributions are welcome.
 

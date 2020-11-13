@@ -1,11 +1,4 @@
----
-layout: content
-title: Mapa nushell de lenguajes funcionales
-prev: Mapa imperativo
-next: Mapa de Operadores
-link_prev: /es/mapa_imperativo_nushell.html
-link_next: /es/mapa_operador_nushell.html 
----
+# Mapa nushell de lenguajes funcionales
 
 La idea detrás de esta tabla is ayudarte a entender como los comandos internos y plugins en Nu se relacionan con lenguajes funcionales. Hemos intentado producir un mapa de los comandos internos y sus equivalentes en otros lenguajes. Contribuciones son bienvenidas.
 

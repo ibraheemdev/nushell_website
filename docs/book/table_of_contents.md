@@ -1,11 +1,4 @@
----
-layout: content
-title: Table of Contents
-prev: Languages
-next: Installation
-link_prev: /
-link_next: /en/installation.html
----
+# Table of Contents
 
 * [Installation](installation.md) - Installing Nu
 * [Introduction](introduction.md) - Getting started

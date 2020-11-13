@@ -1,11 +1,4 @@
----
-layout: content
-title: 安装 Nu
-prev: 目录
-next: 介绍
-link_prev: /zh-cn/table_of_contents.html
-link_next: /zh-cn/introduction.html
----
+# 安装 Nu
 
 目前最佳的获取 Nu 的方法是从 [crates.io](https://crates.io) 安装，到我们的 [发布页](https://github.com/nushell/nushell/releases) 下载预编译二进制包，从源代码构建，或者拉取一个预构建的 Docker 容器。
 

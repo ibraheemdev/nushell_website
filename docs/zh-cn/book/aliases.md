@@ -1,11 +1,4 @@
----
-layout: content
-title: 别名
-prev: 配置
-next: 算数
-link_prev: /zh-cn/configuration.html
-link_next: /zh-cn/math.html
----
+# 别名
 
 Nu 编写长管道的能力可以让你对数据和系统进行大量控制，但这需要打很多字。在预想中，你可以保存写好的管道并重复使用。
 

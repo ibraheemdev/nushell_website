@@ -1,12 +1,5 @@
----
-layout: content
-title: Aliases
-prev: Configuration
-next: Math
-link_prev: /en/configuration.html
-link_next: /en/math.html
----
-w
+# Aliases
+
 Nu's ability to compose long pipelines allow you a lot of control over your data and system, but it comes at the price of a lot of typing. Ideally, you'd be able to save your well-crafted pipelines to use again and again.
 
 This is where aliases come in.

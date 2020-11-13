@@ -1,11 +1,4 @@
----
-layout: content
-title: 算数
-prev: 别名
-next: 环境
-link_prev: /zh-cn/aliases.html
-link_next: /zh-cn/environment.html
----
+# 算数
 
 有时当你在做一个任务时，需要将一些数加起来。 Nu 提供了一些基本的算数操作：
 

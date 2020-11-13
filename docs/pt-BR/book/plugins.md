@@ -1,11 +1,4 @@
----
-layout: content
-title: Plugins
-prev: Escapando
-next: FIM
-link_prev: /pt-BR/escapando.html
-link_next: /
----
+# Plugins
 
 A funcionalidade do Nu pode ser extendida usando plugins. Os plugins podem desenpenhar muitas das mesmas operações que os comandos embutidos do Nu, com o benefício adicional de que eles podem ser incluídos separadamente do Nu em si.
 

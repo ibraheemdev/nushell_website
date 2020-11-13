@@ -1,11 +1,4 @@
----
-layout: content
-title: 配置
-prev: 管道
-next: 别名
-link_prev: /zh-cn/pipeline.html
-link_next: /zh-cn/aliases.html
----
+# 配置
 
 Nu 的内部变量数量很少但仍在不断增长，您可以设置这些内部变量来更改其外观和操作方式。 以下是当前变量，它们的类型以及如何使用它们的描述的列表
 

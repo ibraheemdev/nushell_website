@@ -1,11 +1,4 @@
----
-layout: content
-title: 管道
-prev: 表
-next: 配置
-link_prev: /zh-cn/working_with_tables.html
-link_next: /zh-cn/configuration.html
----
+# 管道
 
 Nu  的核心设计之一就是管道，这种设计思想可以追溯到几十年前的 Unix 背后的原始哲学。 正如 Nu 从 Unix 的字符串数据类型扩展而来，Nu 还扩展了管道的思想，使其不仅包含文本。
 

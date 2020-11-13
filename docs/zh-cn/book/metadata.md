@@ -1,11 +1,4 @@
----
-layout: content
-title: 元数据
-prev: 环境
-next: Shells
-link_prev: /zh-cn/environment.html
-link_next: /zh-cn/shells_in_shells.html
----
+# 元数据
 
 在使用 Nu 的过程中，你可能会遇到一些幕后工作。 例如，假设你尝试打开 Nu 所支持的文件并再次转换：
 

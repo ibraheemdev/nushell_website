@@ -1,11 +1,4 @@
----
-layout: content
-title: Llegando desde Bash
-prev: Plugins
-next: Mapa nushell de otras shells y lenguajes DSLs
-link_prev: /es/plugins.html
-link_next: /en/mapa_nushell.html
----
+# Llegando desde Bash
 
 Nota: Esta tabla asume Nushell 0.14.1 or posterior.
 

@@ -1,11 +1,4 @@
----
-layout: content
-title: 介绍
-prev: 安装
-next: 四处移动
-link_prev: /zh-cn/installation.html
-link_next: /zh-cn/moving_around.html
----
+# 介绍
 
 大家好，欢迎来到 Nushell 项目。这个项目的目标是彰显 Shell 的 Unix 哲学，就是用管道将简单的命令连接在一起，并且带来现代的开发风格。
 

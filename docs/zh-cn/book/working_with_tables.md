@@ -1,11 +1,4 @@
----
-layout: content
-title: 处理表
-prev: 加载数据
-next: 管道
-link_prev: /zh-cn/loading_data.html
-link_next: /zh-cn/pipeline.html
----
+# 处理表
 
 在Nu中查看数据的一种常见方法是通过表格。 Nu 带有许多用于处理表的命令，以方便查找所需的内容以及将数据缩小到所需的范围。
 

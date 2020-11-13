@@ -1,11 +1,4 @@
----
-layout: content
-title: データの読み込み
-prev: データ型
-next: テーブル
-link_prev: /ja/types_of_data.html
-link_next: /ja/working_with_tables.html
----
+# データの読み込み
 
 これまでに、`ls`、`ps`、`date`、および`sys`コマンドを使って、ファイル、プロセス、日付そしてシステム自身の情報を取得する方法をみてきました。各コマンドはテーブル情報を提供しますが、データをテーブルに読み込む他の方法があります。
 

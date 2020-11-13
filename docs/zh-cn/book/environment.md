@@ -1,11 +1,4 @@
----
-layout: content
-title: 环境
-prev: 算数
-next: 元数据
-link_prev: /zh-cn/math.html
-link_next: /zh-cn/metadata.html
----
+# 环境
 
 Shell 中的一项常见任务是控制外部应用程序将使用的环境。 通常，环境打包并在启动时将其提供给外部应用的操作会自动完成。 但有时我们希望对应用程序得到的环境变量进行更精确的控制。
 

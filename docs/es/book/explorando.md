@@ -1,11 +1,4 @@
----
-layout: content
-title: Explorando en el sistema
-prev: Introducción
-next: Tipos de datos
-link_prev: /es/introduccion.html
-link_next: /es/tipos_de_datos.html
----
+# Explorando en el sistema
 
 Shells de antes permiten explorar el sistema de archivos y ejecutar comandos. Shells modernas como Nu permiten hacer lo mismo. Miremos algunos comandos comunes que puedas usar cuando interactues con el sistema.
 

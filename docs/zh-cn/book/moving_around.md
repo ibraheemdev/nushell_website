@@ -1,11 +1,4 @@
----
-layout: content
-title: 在系统中四处移动
-prev: 介绍
-next: 数据类型
-link_prev: /zh-cn/introduction.html
-link_next: /zh-cn/types_of_data.html
----
+# 在系统中四处移动
 
 早前的 Shell 允许你在系统中四处移动并且运行命令，像 Nu 这样的现代 Shell 同样允许你这么干。让我们看看这些你可能会在与系统交互时用到的命令。
 

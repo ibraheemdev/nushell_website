@@ -1,11 +1,4 @@
----
-layout: content
-title: Mapa nushell de lenguajes imperativos
-prev: Mapa Shells/DSLs
-next: Mapa funcional
-link_prev: /es/mapa_nushell.html
-link_next: /es/mapa_funcional_nushell.html
----
+# Mapa nushell de lenguajes imperativos
 
 La idea detrás de esta tabla is ayudarte a entender como los comandos internos y plugins en Nu se relacionan con lenguajes imperativos. Hemos intentado producir un mapa de los comandos internos y sus equivalentes en otros lenguajes. Contribuciones son bienvenidas.
 

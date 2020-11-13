@@ -1,11 +1,4 @@
----
-layout: content
-title: Instalando Nu
-prev: Índice
-next: Introduccion
-link_prev: /es/indice.html
-link_next: /es/introduccion.html
----
+# Instalando Nu
 
 La mejor manera actualmente para poner en marcha Nu es instalándolo a través de [crates.io](https://crates.io), descargando desde [nuestra página](https://github.com/nushell/nushell/releases), compilarlo desde la fuente, o jalando un contenedor preconstruido con Docker.
 

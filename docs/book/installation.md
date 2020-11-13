@@ -1,11 +1,4 @@
----
-layout: content
-title: Installing Nu
-prev: Table of Contents
-next: Introduction
-link_prev: /en/table_of_contents.html
-link_next: /en/introduction.html
----
+# Installing Nu
 
 The best way currently to get Nu up and running is to install from [crates.io](https://crates.io), download pre-built binaries from our [release page](https://github.com/nushell/nushell/releases), build from source, or pulling a pre-built container with Docker.
 
@@ -19,19 +12,19 @@ You can download Nu pre-built from the [release page](https://github.com/nushell
 
 Download the current released `.zip`-file from the [release page](https://github.com/nushell/nushell/releases) and extract it for example to:
 
-{% include installation/windows_example_extraction_location.md %}
+<<< @/snippets/installation/windows_example_extraction_location.md
 
 And then add the folder of `nu` to your PATH. Once we have done that, we can run Nu using the `nu` command:
 
-{% include installation/windows_run_nu.md %}
+<<< @/snippets/installation/windows_run_nu.md
 
 If you are using the new [Windows Terminal](https://github.com/microsoft/terminal) you can set `nu` as your default shell by adding:
 
-{% include installation/windows_terminal_default_shell.md %}
+<<< @/snippets/installation/windows_terminal_default_shell.md
 
 to  `"profiles"` in your Terminal Settings (JSON-file). The last thing to do is to change the `"defaultProfile"` to:
 
-{% include installation/windows_change_default_profile.md %}
+<<< @/snippets/installation/windows_change_default_profile.md
 
 Now `nu` should load on startup of the Windows Terminal.
 
@@ -40,7 +33,7 @@ Now `nu` should load on startup of the Windows Terminal.
 If you want to pull a pre-built container, you can browse tags for the [nushell organization](https://quay.io/organization/nushell)
 on Quay.io. Pulling a container would come down to:
 
-{% include installation/pull_prebuilt_container.md %}
+<<< @/snippets/installation/pull_prebuilt_container.md
 
 Both "nu-base" and "nu" provide the `nu` binary, however nu-base also includes the source code at `/code`
 in the container and all dependencies.
@@ -48,15 +41,15 @@ in the container and all dependencies.
 Optionally, you can also build the containers locally using the [dockerfiles provided](https://github.com/nushell/nushell/tree/master/docker):
 To build the base image:
 
-{% include installation/build_containers_locally_base_image.md %}
+<<< @/snippets/installation/build_containers_locally_base_image.md
 
 And then to build the smaller container (using a Multistage build):
 
-{% include installation/build_containers_locally_multistage_build.md %}
+<<< @/snippets/installation/build_containers_locally_multistage_build.md
 
 Either way, you can run either container as follows:
 
-{% include installation/run_containers_built_locally.md %}
+<<< @/snippets/installation/run_containers_built_locally.md
 
 The second container is a bit smaller, if size is important to you.
 
@@ -80,7 +73,7 @@ If we don't already have Rust on our system, the best way to install it is via [
 
 Nu currently requires the **latest stable (1.46 or later)** version of Rust. The best way is to let `rustup` find the correct version for you. When you first open `rustup` it will ask what version of Rust you wish to install:
 
-{% include installation/rustup_choose_rust_version.md %}
+<<< @/snippets/installation/rustup_choose_rust_version.md
 
 Once we are ready, we press 1 and then enter.
 
@@ -92,59 +85,59 @@ If you'd rather not install Rust via `rustup`, you can also install it via other
 
 You will need to install the "pkg-config" and "libssl-dev" package:
 
-{% include installation/install_pkg_config_libssl_dev.md %}
+<<< @/snippets/installation/install_pkg_config_libssl_dev.md
 
 Linux users who wish to use the `rawkey` or `clipboard` optional features will need to install the "libx11-dev" and "libxcb-composite0-dev" packages:
 
-{% include installation/use_rawkey_and_clipboard.md %}
+<<< @/snippets/installation/use_rawkey_and_clipboard.md
 
 ### RHEL based distros
 
 You will need to install "libxcb", "openssl-devel" and "libX11-devel":
 
-{% include installation/install_rhel_dependencies.md %}
+<<< @/snippets/installation/install_rhel_dependencies.md
 
 ### macOS
 
 Using [Homebrew](https://brew.sh/), you will need to install the "openssl" and "cmake" using: 
 
-{% include installation/macos_deps.md %}
+<<< @/snippets/installation/macos_deps.md
 
 ## Installing from [crates.io](https://crates.io)
 
 Once we have the dependencies Nu needs, we can install it using the `cargo` command that comes with the Rust compiler.
 
-{% include installation/cargo_install_nu.md %}
+<<< @/snippets/installation/cargo_install_nu.md
 
 That's it!  The cargo tool will do the work of downloading Nu and its source dependencies, building it, and installing it into the cargo bin path so that we can run it.
 
 If you want to install with more features, you can use:
 
-{% include installation/cargo_install_nu_more_features.md %}
+<<< @/snippets/installation/cargo_install_nu_more_features.md
 
 For all the available features, the easiest way is to check out Nu and build it yourself using the same Rust tools:
 
-{% include installation/build_nu_yourself.md %}
+<<< @/snippets/installation/build_nu_yourself.md
 
 For this to work, make sure you have all the dependencies (shown above) on your system.
 
 Once installed, we can run Nu using the `nu` command:
 
-{% include installation/crates_run_nu.md %}
+<<< @/snippets/installation/crates_run_nu.md
 
 ## Building from source
 
 We can also build our own Nu from source directly from github. This gives us immediate access to the latest Nu features and bug fixes.
 
-{% include installation/git_clone_nu.md %}
+<<< @/snippets/installation/git_clone_nu.md
 
 Git will clone the main nushell repo for us. From there, we can build and run Nu if we are using `rustup` with:
 
-{% include installation/build_nu_from_source.md %}
+<<< @/snippets/installation/build_nu_from_source.md
 
 You can also build and run Nu in release mode:
 
-{% include installation/build_nu_from_source_release.md %}
+<<< @/snippets/installation/build_nu_from_source_release.md
 
 People familiar with Rust may wonder why we do both a "build" and a "run" step if "run" does a build by default. This is to get around a shortcoming of the new `default-run` option in Cargo, and ensure that all plugins are built, though this may not be required in the future.
 
@@ -155,7 +148,7 @@ People familiar with Rust may wonder why we do both a "build" and a "run" step i
 To set the login shell you can use the [`chsh`](https://linux.die.net/man/1/chsh) command.
 Some Linux distributions have a list of valid shells located in `/etc/shells` and will disallow changing the shell until Nu is in the whitelist. You may see an error similar to the one below if you haven't updated the `shells` file:
 
-{% include installation/chsh_invalid_shell_error.md %}
+<<< @/snippets/installation/chsh_invalid_shell_error.md
 
 You can add Nu to the list of allowed shells by appending your Nu binary to the `shells` file.
 The path to add can be found with the command `which nu`, usually it is `$HOME/.cargo/bin/nu`.

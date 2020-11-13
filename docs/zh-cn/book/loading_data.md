@@ -1,11 +1,4 @@
----
-layout: content
-title: 加载数据
-prev: 数据类型
-next: 表
-link_prev: /zh-cn/types_of_data.html
-link_next: /zh-cn/working_with_tables.html
----
+# 加载数据
 
 之前我们使用了 `ls`, `ps`, `date`, `sys` 来从文件系统、进程、日期时间和系统本身加载了数据。每条命令都以表的形式提供了我们能够探索到的信息。
 我们在工作时也可通过其他方法将数据加载为表。

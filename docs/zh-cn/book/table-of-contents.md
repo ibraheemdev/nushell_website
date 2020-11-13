@@ -1,11 +1,4 @@
----
-layout: content
-title: 目录
-prev: 选择语言
-next: 安装
-link_prev: /
-link_next: /zh-cn/installation.html
----
+# 目录
 
 * [安装](installation.md) - 安装 nushell
 * [介绍](introduction.md) - 开始使用

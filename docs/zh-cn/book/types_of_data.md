@@ -1,11 +1,4 @@
----
-layout: content
-title: 数据类型
-prev: 四处移动
-next: 加载数据
-link_prev: /zh-cn/moving_around.html
-link_next: /zh-cn/loading_data.html
----
+# 数据类型
 
 通常，Unix Shell 命令用文本字符串来相互交流。一个命令需要通过标准输出（通常称为 'stdout'）输出文本，然后另一个将会从标准输入（通常称为 'stdin'）来读取文本。用这种方法，两个命令相互交流。
 

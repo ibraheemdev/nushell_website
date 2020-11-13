@@ -1,11 +1,4 @@
----
-layout: content
-title: Shells en shells
-prev: Metadatos
-next: Escapando
-link_prev: /es/metadatos.html
-link_next: /es/escapando.html
----
+# Shells en shells
 
 ## Trabajando con múltiples directorios
 

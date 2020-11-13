@@ -1,11 +1,4 @@
----
-layout: content
-title: Math
-prev: Aliases
-next: Environment
-link_prev: /en/aliases.html
-link_next: /en/environment.html
----
+# Math
 
 Sometimes you just need to add a few numbers when you're working on a task.  Nu offers a set of basic math operations that you can use:
 

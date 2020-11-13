@@ -1,11 +1,4 @@
----
-layout: content
-title: Matemáticas
-prev: Aliases
-next: Entorno
-link_prev: /en/aliases.html
-link_next: /en/entorno.html
----
+# Matemáticas
 
 Hay veces que simplemente necesitas sumar un par de números cuando te encuentras resolviendo problemas. Nu ofrece un conjunto de operaciones matemáticas básicas que puedes utilizar:
 
