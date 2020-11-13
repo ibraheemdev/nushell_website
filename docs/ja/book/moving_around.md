@@ -4,7 +4,7 @@
 
 ## ディレクトリの内容を確認する
 
-<<< @/snippets/moving_around/ls_example.md
+<<< @/snippets/moving_around/ls_example.sh
 
 他の章でみてきたように、`ls`はパスの内容を表示するためのコマンドです。Nuは利用可能なテーブルとして内容を返します。
 

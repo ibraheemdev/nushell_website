@@ -26,12 +26,12 @@ y posteriormente agrega Nu a la variable de entorno `PATH`. Una vez que hagamos 
  Si te encuentras usando la nueva [Windows Terminal](https://github.com/microsoft/terminal) puedes establecer `nu` como la shell por defecto añadiendo:
 
  ```         
-             {
-             "guid": "{2b372ca1-1ee2-403d-a839-6d63077ad871}",
-             "hidden": false,
-             "name": "Nu Shell",
-             "commandline": "nu.exe"
-             }
+{
+  "guid": "{2b372ca1-1ee2-403d-a839-6d63077ad871}",
+  "hidden": false,
+  "name": "Nu Shell",
+  "commandline": "nu.exe"
+}
  ```
 
  a  `"profiles"` en las preferencias de tu Terminal (archivo JSON). Lo último que tienes que hacer es cambiar `"defaultProfile"` a:
@@ -123,17 +123,17 @@ Si prefieres no instalar Rust mediante `rustup`, también puedes instalar a trav
 
 Vas a necesitar instalar "pkg-config" y "libssl-dev":
 
-<<< @/snippets/installation/install_pkg_config_libssl_dev.md
+<<< @/snippets/installation/install_pkg_config_libssl_dev.sh
 
 Usuarios de Linux que desean usar las funcionalidades opcionales `rawkey` o `clipboard` necesitarán instalar los paquetes "libx11-dev" y "libxcb-composite0-dev":
 
-<<< @/snippets/installation/use_rawkey_and_clipboard.md
+<<< @/snippets/installation/use_rawkey_and_clipboard.sh
 
 ### Distribuciones basadas en RHEL
 
 Vas a necesitar instalar "libxcb", "openssl-devel" and "libX11-devel":
 
-<<< @/snippets/installation/install_rhel_dependencies.md
+<<< @/snippets/installation/install_rhel_dependencies.sh
 
 ### macOS
 

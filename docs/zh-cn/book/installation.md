@@ -28,12 +28,12 @@ C:\Users\user>
 如果你在使用新的 [Windows Terminal](https://github.com/microsoft/terminal) 你可以将 `nu` 设为默认 Shell 程序，将
 
 ```json
-            {
-                "guid": "{2b372ca1-1ee2-403d-a839-6d63077ad871}",
-                "hidden": false,
-                "name": "Nu Shell",
-                "commandline": "nu.exe"
-            }
+{
+  "guid": "{2b372ca1-1ee2-403d-a839-6d63077ad871}",
+  "hidden": false,
+  "name": "Nu Shell",
+  "commandline": "nu.exe"
+}
 ```
 
 添加到 Terminal 的 `"profiles"` 配置文件（JSON 文件）中。最后一步是更改 `"defaultProfile"` 为:

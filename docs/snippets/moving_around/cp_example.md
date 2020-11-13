@@ -1,3 +1,0 @@
-```
-> cp item location
-```
