@@ -4,7 +4,7 @@ Shells de antes permiten explorar el sistema de archivos y ejecutar comandos. Sh
 
 ## Ver contenido de un directorio
 
-{% include moving_around/ls_example.md %}
+<<< @/snippets/moving_around/ls_example.md
 
 Cómo hemos visto en otros capítulos, `ls` es un comando para mirar el contenido de una ruta. Nu devolverá el contenido en una tabla que podemos usar.
 

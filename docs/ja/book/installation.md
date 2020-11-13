@@ -13,19 +13,19 @@ Dockerを利用してビルド済のコンテナをプルしてくる方法も�
 
 [リリースページ](https://github.com/nushell/nushell/releases)から`.zip`ファイルをダウンロードして、例えば次の箇所に解凍します。
 
-{% include installation/windows_example_extraction_location.md %}
+<<< @/snippets/installation/windows_example_extraction_location.md
 
 そして、`nu`フォルダをPATHに追加します。これが済めば、`nu`コマンドでNuを起動できます。
 
-{% include installation/windows_run_nu.md %}
+<<< @/snippets/installation/windows_run_nu.md
 
 もし、[Windows Terminal](https://github.com/microsoft/terminal)を使っているなら、次のようにして`nu`をデフォルトシェルに指定できます。
 
-{% include installation/windows_terminal_default_shell.md %}
+<<< @/snippets/installation/windows_terminal_default_shell.md
 
 この設定をTerminal Settingsの`"profiles"`に追加します。そして、`"defaultProfile"`を次のように変更します。
 
-{% include installation/windows_change_default_profile.md %}
+<<< @/snippets/installation/windows_change_default_profile.md
 
 これで`nu`がWindows Terminalの起動時にロードされます。
 
@@ -34,22 +34,22 @@ Dockerを利用してビルド済のコンテナをプルしてくる方法も�
 ビルド済のDockerコンテナをプルしたい場合はQuay.io上で[nushell organization](https://quay.io/organization/nushell)のためのタグを閲覧できます。
 コンテナのプルは以下のように行います。
 
-{% include installation/pull_prebuilt_container.md %}
+<<< @/snippets/installation/pull_prebuilt_container.md
 
 "nu-base"と"nu"のどちらにもバイナリーが含まれますが、nu-baseには`/code`内にソースコードと全ての依存関係も含まれています。
 
 [dockerfiles](https://github.com/nushell/nushell/tree/master/docker)を利用してローカルにコンテナをビルドすることもできます。
 ベースイメージをビルドするには:
 
-{% include installation/build_containers_locally_base_image.md %}
+<<< @/snippets/installation/build_containers_locally_base_image.md
 
 そして、小さなコンテナをビルドするには(マルチステージビルドを利用):
 
-{% include installation/build_containers_locally_multistage_build.md %}
+<<< @/snippets/installation/build_containers_locally_multistage_build.md
 
 どちらの方法でも、次のようにコンテナを実行できます:
 
-{% include installation/run_containers_built_locally.md %}
+<<< @/snippets/installation/run_containers_built_locally.md
 
 サイズを重要視する場合は、２番目のコンテナのほうが少し小さくなります。
 
@@ -78,7 +78,7 @@ Nuは現在、**最新のstable(1.39 or later)** バージョンのRustを必要
 `rustup`で正しいversionを選択するのが良い方法です。
 最初に"rustup"を実行すると、インストールするRustのバージョンを尋ねられます。
 
-{% include installation/rustup_choose_rust_version.md %}
+<<< @/snippets/installation/rustup_choose_rust_version.md
 
 準備ができたら、1を押してからエンターを押します。
 
@@ -90,51 +90,51 @@ Nuは現在、**最新のstable(1.39 or later)** バージョンのRustを必要
 
 "pkg-config"および"libssl-dev"パッケージをインストールしてください。
 
-{% include installation/install_pkg_config_libssl_dev.md %}
+<<< @/snippets/installation/install_pkg_config_libssl_dev.md
 
 `rawkey`や`clipboard`機能を使用するLinuxユーザーは"libx11-dev"および"libxcb-composite0-dev"パッケージをインストールする必要があります。
 
-{% include installation/use_rawkey_and_clipboard.md %}
+<<< @/snippets/installation/use_rawkey_and_clipboard.md
 
 ### macOS
 
 [Homebrew](https://brew.sh/)を利用して、"openssl"と"cmake"をインストールしてください。
 
-{% include installation/macos_deps.md %}
+<<< @/snippets/installation/macos_deps.md
 
 ## [crates.io](https://crates.io)からのインストール
 
 必要となる依存関係が準備できたら、Rustコンパイラーに付属している`cargo`を使って、Nuをインストールできます。
 
-{% include installation/cargo_install_nu.md %}
+<<< @/snippets/installation/cargo_install_nu.md
 
 これでおしまいです！`cargo`はNuのソースコードとその依存関係をダウンロードしてビルドし、`cargo`のバイナリーパスにインストールすることでNuを実行できるようにします。
 
 より多くの機能をインストールするには、次のようにします。
 
-{% include installation/cargo_install_nu_more_features.md %}
+<<< @/snippets/installation/cargo_install_nu_more_features.md
 
 すべての機能を利用するための最も簡単な方法はNuをチェックアウトして、Rustツールを利用してビルドすることです。
 
-{% include installation/build_nu_yourself.md %}
+<<< @/snippets/installation/build_nu_yourself.md
 
 インストールが完了すると、`nu`コマンドでNuを実行できます。
 
-{% include installation/crates_run_nu.md %}
+<<< @/snippets/installation/crates_run_nu.md
 
 ## ソースからビルド
 
 githubのソースから直接ビルドすることもできます。こうすることで、最新の機能やバグ修正にすぐにアクセスすることができます。
 
-{% include installation/git_clone_nu.md %}
+<<< @/snippets/installation/git_clone_nu.md
 
 Gitでメインのnushellリポジトリをクローンし、Nuをビルドして実行できます。
 
-{% include installation/build_nu_from_source.md %}
+<<< @/snippets/installation/build_nu_from_source.md
 
 リリースモードでNuをビルドし実行することもできます。
 
-{% include installation/build_nu_from_source_release.md %}
+<<< @/snippets/installation/build_nu_from_source_release.md
 
 ## ログインシェルとして設定するには
 
@@ -144,7 +144,7 @@ Gitでメインのnushellリポジトリをクローンし、Nuをビルドし�
 一部のLinuxディストリビューションには`/etc/shells`に有効なシェルのリストが記載されており、Nuがホワイトリストに登録されるまで変更ができません。
 `shells`ファイルを更新していない場合は次のようなエラーが表示される場合があります。
 
-{% include installation/chsh_invalid_shell_error.md %}
+<<< @/snippets/installation/chsh_invalid_shell_error.md
 
 Nuバイナリを`shells`ファイルに追加することにより、許可されたシェルのリストにNuを追加できます。
 追加するパスは`which nu`コマンドで見つけることができます。通常は`$HOME/.cargo/bin/nu`です。
