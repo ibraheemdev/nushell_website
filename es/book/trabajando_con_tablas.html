@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Trabajando con tablas | NuShell</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="A new type of shell.">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.992cb7aa.css" as="style"><link rel="preload" href="/assets/js/app.c7787b3c.js" as="script"><link rel="preload" href="/assets/js/2.97f0a886.js" as="script"><link rel="preload" href="/assets/js/51.47d01690.js" as="script"><link rel="prefetch" href="/assets/js/10.979eff6c.js"><link rel="prefetch" href="/assets/js/11.8a53c31d.js"><link rel="prefetch" href="/assets/js/12.599150a1.js"><link rel="prefetch" href="/assets/js/13.b7ada105.js"><link rel="prefetch" href="/assets/js/14.5c4ee028.js"><link rel="prefetch" href="/assets/js/15.2a3d74d3.js"><link rel="prefetch" href="/assets/js/16.916e0717.js"><link rel="prefetch" href="/assets/js/17.666b5cee.js"><link rel="prefetch" href="/assets/js/18.087d0be8.js"><link rel="prefetch" href="/assets/js/19.15bd9858.js"><link rel="prefetch" href="/assets/js/20.086b0c67.js"><link rel="prefetch" href="/assets/js/21.fa97a05c.js"><link rel="prefetch" href="/assets/js/22.c2adb65e.js"><link rel="prefetch" href="/assets/js/23.9bc02e82.js"><link rel="prefetch" href="/assets/js/24.c73f7238.js"><link rel="prefetch" href="/assets/js/25.15bc4262.js"><link rel="prefetch" href="/assets/js/26.99d7d862.js"><link rel="prefetch" href="/assets/js/27.8e743932.js"><link rel="prefetch" href="/assets/js/28.d87539de.js"><link rel="prefetch" href="/assets/js/29.df90be33.js"><link rel="prefetch" href="/assets/js/3.1e8557d2.js"><link rel="prefetch" href="/assets/js/30.58abf4c7.js"><link rel="prefetch" href="/assets/js/31.ae869e09.js"><link rel="prefetch" href="/assets/js/32.ba1daa11.js"><link rel="prefetch" href="/assets/js/33.b8448fcf.js"><link rel="prefetch" href="/assets/js/34.11e657cd.js"><link rel="prefetch" href="/assets/js/35.c157db6c.js"><link rel="prefetch" href="/assets/js/36.95a3ac2c.js"><link rel="prefetch" href="/assets/js/37.58b4c2a3.js"><link rel="prefetch" href="/assets/js/38.714c8c8e.js"><link rel="prefetch" href="/assets/js/39.03723cb2.js"><link rel="prefetch" href="/assets/js/4.09fd2c39.js"><link rel="prefetch" href="/assets/js/40.59874875.js"><link rel="prefetch" href="/assets/js/41.78d55324.js"><link rel="prefetch" href="/assets/js/42.26b48e47.js"><link rel="prefetch" href="/assets/js/43.9f7725b0.js"><link rel="prefetch" href="/assets/js/44.a7b10e10.js"><link rel="prefetch" href="/assets/js/45.65f8537a.js"><link rel="prefetch" href="/assets/js/46.fa731aa1.js"><link rel="prefetch" href="/assets/js/47.3c117b4b.js"><link rel="prefetch" href="/assets/js/48.2218a728.js"><link rel="prefetch" href="/assets/js/49.46afb130.js"><link rel="prefetch" href="/assets/js/5.fc791712.js"><link rel="prefetch" href="/assets/js/50.89d16415.js"><link rel="prefetch" href="/assets/js/52.f29001fa.js"><link rel="prefetch" href="/assets/js/53.022951dd.js"><link rel="prefetch" href="/assets/js/54.1e1635f9.js"><link rel="prefetch" href="/assets/js/55.0452aa79.js"><link rel="prefetch" href="/assets/js/56.86679527.js"><link rel="prefetch" href="/assets/js/57.92e22ace.js"><link rel="prefetch" href="/assets/js/58.bee0bee5.js"><link rel="prefetch" href="/assets/js/59.4b3f3bef.js"><link rel="prefetch" href="/assets/js/6.ffe6f60a.js"><link rel="prefetch" href="/assets/js/60.2d6eef3e.js"><link rel="prefetch" href="/assets/js/61.65f3a2a4.js"><link rel="prefetch" href="/assets/js/62.2e720937.js"><link rel="prefetch" href="/assets/js/63.691d68d9.js"><link rel="prefetch" href="/assets/js/64.e731e093.js"><link rel="prefetch" href="/assets/js/65.52684ae8.js"><link rel="prefetch" href="/assets/js/66.1311a80a.js"><link rel="prefetch" href="/assets/js/67.e526c465.js"><link rel="prefetch" href="/assets/js/68.6affcf71.js"><link rel="prefetch" href="/assets/js/69.0c52f02b.js"><link rel="prefetch" href="/assets/js/7.f9c75138.js"><link rel="prefetch" href="/assets/js/70.7115a2ff.js"><link rel="prefetch" href="/assets/js/71.51855d3a.js"><link rel="prefetch" href="/assets/js/72.8397ef5a.js"><link rel="prefetch" href="/assets/js/73.11966146.js"><link rel="prefetch" href="/assets/js/74.aecf0b13.js"><link rel="prefetch" href="/assets/js/75.6c8defe6.js"><link rel="prefetch" href="/assets/js/76.6e5f5fd2.js"><link rel="prefetch" href="/assets/js/77.fe28b6b3.js"><link rel="prefetch" href="/assets/js/78.85a14b90.js"><link rel="prefetch" href="/assets/js/79.ea436891.js"><link rel="prefetch" href="/assets/js/8.ad78a7d6.js"><link rel="prefetch" href="/assets/js/80.17ca11db.js"><link rel="prefetch" href="/assets/js/81.c1f9f061.js"><link rel="prefetch" href="/assets/js/82.6c874a4b.js"><link rel="prefetch" href="/assets/js/83.a8659709.js"><link rel="prefetch" href="/assets/js/84.615fb500.js"><link rel="prefetch" href="/assets/js/85.8c15d628.js"><link rel="prefetch" href="/assets/js/86.c22e286a.js"><link rel="prefetch" href="/assets/js/87.eed8f6cc.js"><link rel="prefetch" href="/assets/js/88.48279401.js"><link rel="prefetch" href="/assets/js/89.eabad509.js"><link rel="prefetch" href="/assets/js/9.1e08c56a.js"><link rel="prefetch" href="/assets/js/90.bf475547.js"><link rel="prefetch" href="/assets/js/91.7497f779.js"><link rel="prefetch" href="/assets/js/92.e39b9879.js"><link rel="prefetch" href="/assets/js/93.d290e6c9.js"><link rel="prefetch" href="/assets/js/94.ffd5c8ee.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.992cb7aa.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/es/" class="home-link router-link-active"><!----> <span class="site-name">NuShell</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/es/book/" class="nav-link router-link-active">
+  Libro
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Idiomas</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Idiomas</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/es/book/trabajando_con_tablas.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Español
+</a></li><li class="dropdown-item"><!----> <a href="/ja/" class="nav-link">
+  日本語
+</a></li><li class="dropdown-item"><!----> <a href="/pt-BR/" class="nav-link">
+  Português do Brasil
+</a></li><li class="dropdown-item"><!----> <a href="/zh-cn/" class="nav-link">
+  中文
+</a></li></ul></div></div> <a href="https://github.com/nushell/nushell" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/es/book/" class="nav-link router-link-active">
+  Libro
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Idiomas</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Idiomas</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/es/book/trabajando_con_tablas.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Español
+</a></li><li class="dropdown-item"><!----> <a href="/ja/" class="nav-link">
+  日本語
+</a></li><li class="dropdown-item"><!----> <a href="/pt-BR/" class="nav-link">
+  Português do Brasil
+</a></li><li class="dropdown-item"><!----> <a href="/zh-cn/" class="nav-link">
+  中文
+</a></li></ul></div></div> <a href="https://github.com/nushell/nushell" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Nu Book</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/es/book/instalacion.html" class="sidebar-link">Instalando Nu</a></li><li><a href="/es/book/introduccion.html" class="sidebar-link">Introducción</a></li><li><a href="/es/book/explorando.html" class="sidebar-link">Explorando en el sistema</a></li><li><a href="/es/book/tipos_de_datos.html" class="sidebar-link">Tipos de datos</a></li><li><a href="/es/book/cargando_datos.html" class="sidebar-link">Cargando datos</a></li><li><a href="/es/book/trabajando_con_tablas.html" aria-current="page" class="active sidebar-link">Trabajando con tablas</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/es/book/trabajando_con_tablas.html#ordenando-los-datos" class="sidebar-link">Ordenando los datos</a></li><li class="sidebar-sub-header"><a href="/es/book/trabajando_con_tablas.html#obteniendo-datos-de-una-tabla" class="sidebar-link">Obteniendo datos de una tabla</a></li><li class="sidebar-sub-header"><a href="/es/book/trabajando_con_tablas.html#cambiando-datos-de-una-tabla" class="sidebar-link">Cambiando datos de una tabla</a></li></ul></li><li><a href="/es/book/pipeline.html" class="sidebar-link">El pipeline</a></li><li><a href="/es/book/configuracion.html" class="sidebar-link">Configuración</a></li><li><a href="/es/book/aliases.html" class="sidebar-link">Aliases</a></li><li><a href="/es/book/matematicas.html" class="sidebar-link">Matemáticas</a></li><li><a href="/es/book/entorno.html" class="sidebar-link">Entorno</a></li><li><a href="/es/book/metadatos.html" class="sidebar-link">Metadatos</a></li><li><a href="/es/book/shells_en_shells.html" class="sidebar-link">Shells en shells</a></li><li><a href="/es/book/escapando.html" class="sidebar-link">Escapando al sistema</a></li><li><a href="/es/book/plugins.html" class="sidebar-link">Complementos (plugins)</a></li><li><a href="/es/book/llegando_de_bash.html" class="sidebar-link">Llegando desde Bash</a></li><li><a href="/es/book/mapa_nushell.html" class="sidebar-link">Mapa nushell de otras shells y lenguajes DSLs</a></li><li><a href="/es/book/mapa_imperativo_nushell.html" class="sidebar-link">Mapa nushell de lenguajes imperativos</a></li><li><a href="/es/book/mapa_funcional_nushell.html" class="sidebar-link">Mapa nushell de lenguajes funcionales</a></li><li><a href="/es/book/mapa_operador_nushell.html" class="sidebar-link">Mapa de operadores en Nushell</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="trabajando-con-tablas"><a href="#trabajando-con-tablas" class="header-anchor">#</a> Trabajando con tablas</h1> <p>Una de las maneras comunes de mirar datos en Nu es a través de una tabla. Nu viene con una serie de comandos que trabajan con tablas para que pueda ser más conveniente encontrar lo que estás buscando y para limitar los datos a solo lo que necesites.</p> <p>Para empezar, consigamos una tabla que podamos usar:</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; ls
+---+---------------+------+----------+---------+------------+------------
+ # | name          | type | readonly | size    | accessed   | modified 
+---+---------------+------+----------+---------+------------+------------
+ 0 | add.rs        | File |          | 2.7 KB  | 2 days ago | 2 days ago 
+ 1 | sum.rs        | File |          | 3.0 KB  | 2 days ago | 2 days ago 
+ 2 | inc.rs        | File |          | 11.8 KB | 2 days ago | 2 days ago 
+ 3 | str.rs        | File |          | 21.4 KB | 2 days ago | 2 days ago 
+ 4 | skip.rs       | File |          | 1.7 KB  | 2 days ago | 2 days ago 
+ 5 | textview.rs   | File |          | 9.4 KB  | 2 days ago | 2 days ago 
+ 6 | binaryview.rs | File |          | 13.0 KB | a day ago  | a day ago 
+ 7 | edit.rs       | File |          | 2.7 KB  | 2 days ago | 2 days ago 
+ 8 | tree.rs       | File |          | 3.0 KB  | 2 days ago | 2 days ago 
+ 9 | sys.rs        | File |          | 9.2 KB  | 2 days ago | 2 days ago 
+---+---------------+------+----------+---------+------------+------------
+</code></pre></div><h2 id="ordenando-los-datos"><a href="#ordenando-los-datos" class="header-anchor">#</a> Ordenando los datos</h2> <p>Podemos ordenar la tabla llamando el comando <code>sort-by</code> e indicándole qué columnas queremos usar al ordenar. Digamos que deseamos ordenar nuestra tabla por tamaño de archivo:</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; ls | sort-by size
+---+---------------+------+----------+---------+------------+------------
+ # | name          | type | readonly | size    | accessed   | modified 
+---+---------------+------+----------+---------+------------+------------
+ 0 | skip.rs       | File |          | 1.7 KB  | 2 days ago | 2 days ago 
+ 1 | add.rs        | File |          | 2.7 KB  | 2 days ago | 2 days ago 
+ 2 | edit.rs       | File |          | 2.7 KB  | 2 days ago | 2 days ago 
+ 3 | sum.rs        | File |          | 3.0 KB  | 2 days ago | 2 days ago 
+ 4 | tree.rs       | File |          | 3.0 KB  | 2 days ago | 2 days ago 
+ 5 | sys.rs        | File |          | 9.2 KB  | 2 days ago | 2 days ago 
+ 6 | textview.rs   | File |          | 9.4 KB  | 2 days ago | 2 days ago 
+ 7 | inc.rs        | File |          | 11.8 KB | 2 days ago | 2 days ago 
+ 8 | binaryview.rs | File |          | 13.0 KB | a day ago  | a day ago 
+ 9 | str.rs        | File |          | 21.4 KB | 2 days ago | 2 days ago 
+---+---------------+------+----------+---------+------------+------------
+</code></pre></div><p>Podemos ordenar una tabla con cualquier columna que pueda ser comparada. Por ejemplo, también pudimos haber ordenador usando las columnas &quot;name&quot;, &quot;accessed&quot;, o &quot;modified&quot;.</p> <h1 id="seleccionando-los-datos-que-quieres"><a href="#seleccionando-los-datos-que-quieres" class="header-anchor">#</a> Seleccionando los datos que quieres</h1> <p>Podemos seleccionar datos de una tabla seleccionando columnas o filas específicas. Escojamos algunas columnas de nuestra tabla para usar:</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; ls | select name size
+---+---------------+---------
+ # | name          | size 
+---+---------------+---------
+ 0 | add.rs        | 2.7 KB 
+ 1 | sum.rs        | 3.0 KB 
+ 2 | inc.rs        | 11.8 KB 
+ 3 | str.rs        | 21.4 KB 
+ 4 | skip.rs       | 1.7 KB 
+ 5 | textview.rs   | 9.4 KB 
+ 6 | binaryview.rs | 13.0 KB 
+ 7 | edit.rs       | 2.7 KB 
+ 8 | tree.rs       | 3.0 KB 
+ 9 | sys.rs        | 9.2 KB 
+---+---------------+---------
+</code></pre></div><p>Esto ayuda a crear una table más enfocada para lo que necesitamos. Siguiente, digamos que queremos ver los 5 archivos más livianos de este directorio:</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; ls | sort-by size | first 5
+---+---------+------+----------+--------+------------+------------
+ # | name    | type | readonly | size   | accessed   | modified 
+---+---------+------+----------+--------+------------+------------
+ 0 | skip.rs | File |          | 1.7 KB | 2 days ago | 2 days ago 
+ 1 | add.rs  | File |          | 2.7 KB | 2 days ago | 2 days ago 
+ 2 | edit.rs | File |          | 2.7 KB | 2 days ago | 2 days ago 
+ 3 | sum.rs  | File |          | 3.0 KB | 2 days ago | 2 days ago 
+ 4 | tree.rs | File |          | 3.0 KB | 2 days ago | 2 days ago 
+---+---------+------+----------+--------+------------+------------
+</code></pre></div><p>Notarás que primero ordenamos la tabla por tamaño para llegar hasta el archivo más pequeño y luego usamos <code>first 5</code> que nos devuelve las primeras 5 filas de la tabla.</p> <p>También puedes saltarte filas con <code>skip</code> que no deseas. Saltemos las primeras dos de las 5 filas que obtuvimos arriba:</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; ls | sort-by size | first 5 | skip 2
+---+---------+------+----------+--------+------------+------------
+ # | name    | type | readonly | size   | accessed   | modified 
+---+---------+------+----------+--------+------------+------------
+ 0 | edit.rs | File |          | 2.7 KB | 2 days ago | 2 days ago 
+ 1 | sum.rs  | File |          | 3.0 KB | 2 days ago | 2 days ago 
+ 2 | tree.rs | File |          | 3.0 KB | 2 days ago | 2 days ago 
+---+---------+------+----------+--------+------------+------------
+</code></pre></div><p>Hemos reducido a tres filas que nos interesa.</p> <p>Veamos algunos otros comandos para seleccionar datos. Es posible que te hayas preguntado por qué las filas de la tabla son números. Esto actúa como una forma práctica de llegar a una sola fila. Ordenemos nuestra tabla por el nombre del archivo y luego escojamos una de las filas con el comando <code>n-th</code> usando el número de fila:</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; ls | sort-by name
+---+---------------+------+----------+---------+------------+------------
+ # | name          | type | readonly | size    | accessed   | modified 
+---+---------------+------+----------+---------+------------+------------
+ 0 | add.rs        | File |          | 2.7 KB  | 2 days ago | 2 days ago 
+ 1 | binaryview.rs | File |          | 13.0 KB | a day ago  | a day ago 
+ 2 | edit.rs       | File |          | 2.7 KB  | 2 days ago | 2 days ago 
+ 3 | inc.rs        | File |          | 11.8 KB | 2 days ago | 2 days ago 
+ 4 | skip.rs       | File |          | 1.7 KB  | 2 days ago | 2 days ago 
+ 5 | str.rs        | File |          | 21.4 KB | 2 days ago | 2 days ago 
+ 6 | sum.rs        | File |          | 3.0 KB  | 2 days ago | 2 days ago 
+ 7 | sys.rs        | File |          | 9.2 KB  | 2 days ago | 2 days ago 
+ 8 | textview.rs   | File |          | 9.4 KB  | 2 days ago | 2 days ago 
+ 9 | tree.rs       | File |          | 3.0 KB  | 2 days ago | 2 days ago 
+---+---------------+------+----------+---------+------------+------------
+
+&gt; ls | sort-by name | nth 5
+--------+------+----------+---------+------------+------------
+ name   | type | readonly | size    | accessed   | modified 
+--------+------+----------+---------+------------+------------
+ str.rs | File |          | 21.4 KB | 2 days ago | 2 days ago 
+--------+------+----------+---------+------------+------------
+</code></pre></div><h2 id="obteniendo-datos-de-una-tabla"><a href="#obteniendo-datos-de-una-tabla" class="header-anchor">#</a> Obteniendo datos de una tabla</h2> <p>Hasta ahora hemos trabajado con tablas reduciendo la tabla a solo lo que necesitamos. A veces es posible que queramos ir un paso más allá y solo mirar los valores en las celdas en lugar the tomar una columna completa. Digamos, por ejemplo, que queramos obtener una lista de los nombres de los archivos. Para esto usamos el comando <code>get</code>:</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; ls | get name
+---+---------------
+ # | value 
+---+---------------
+ 0 | add.rs 
+ 1 | sum.rs 
+ 2 | inc.rs 
+ 3 | str.rs 
+ 4 | skip.rs 
+ 5 | textview.rs 
+ 6 | binaryview.rs 
+ 7 | edit.rs 
+ 8 | tree.rs 
+ 9 | sys.rs 
+---+---------------
+</code></pre></div><p>Ahora tenemos los valores de cada nombre de los archivos.</p> <p>Puede parecerse al comando <code>select</code> que vimos previamente, probemos <code>select</code> para comparar los dos:</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; ls | select name
+---+---------------
+ # | name 
+---+---------------
+ 0 | add.rs 
+ 1 | sum.rs 
+ 2 | inc.rs 
+ 3 | str.rs 
+ 4 | skip.rs 
+ 5 | textview.rs 
+ 6 | binaryview.rs 
+ 7 | edit.rs 
+ 8 | tree.rs 
+ 9 | sys.rs 
+---+---------------
+</code></pre></div><p>¡Se ven muy similares! Veamos si podemos explicar la diferencia entre estos dos comandos para aclarar:</p> <ul><li><code>select</code> - crea una tabla donde incluye únicamente las columnas indicadas</li> <li><code>get</code> - devuelve los valores dentro de la columna indicada</li></ul> <p>La manera de distinguirlas mirando la tabla de forma característica es con el nombre de columna <code>value</code> que nos permite saber que será una lista de valores con la que podemos trabajar.</p> <p>El comando <code>get</code> puede ir más allá y tomar una ruta para datos más profundos en la tabla. Esto simplifica trabajar con datos más complejos como las estructuras que podrías encontrar en archivos .json.</p> <h2 id="cambiando-datos-de-una-tabla"><a href="#cambiando-datos-de-una-tabla" class="header-anchor">#</a> Cambiando datos de una tabla</h2> <p>Además de seleccionar datos de una tabla, también podemos actualizar lo que contiene una tabla. Es posible que queramos agregar nuevas columnas o editar el contenido de una celda. En Nu, en lugar la misma tabla, cada uno de los comandos en la sección devolvera una nueva tabla en la tubería.</p> <h3 id="agregando-una-nueva-columna"><a href="#agregando-una-nueva-columna" class="header-anchor">#</a> Agregando una nueva columna</h3> <p>Podemos utilizar el comando <code>add</code> para agregar una nueva columna a la tabla. Veamos un ejemplo:</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; open rustfmt.toml
+---------
+ edition 
+---------
+ 2018 
+---------
+</code></pre></div><p>Agreguemos una columna llamada &quot;next_edition&quot; con el valor 2021:</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; open rustfmt.toml | add next_edition 2021
+---------+--------------
+ edition | next_edition 
+---------+--------------
+ 2018    | 2021 
+---------+--------------
+</code></pre></div><p>Observa que si abrimos el archivo original el contenido permanece igual:</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; open rustfmt.toml
+---------
+ edition 
+---------
+ 2018 
+---------
+</code></pre></div><p>Los cambios en Nu son cambios funcionales, lo que significa que funcionan en los valores mismos en vez de causar cambios permanentes. Esto nos permite realizar diferentes tipos de trabajo en nuestra tubería hasta que estemos listos para grabar los resultados con cualquier cambio que nos gustaría si así decidimos. Aquí podríamos grabar los resultados usando el comando <code>save</code>:</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; open rustfmt.toml | add next_edition 2021 | save rustfmt2.toml
+/home/jonathan/Source/nushell(master)&gt; open rustfmt2.toml
+---------+--------------
+ edition | next_edition 
+---------+--------------
+ 2018    | 2021 
+---------+--------------
+</code></pre></div><h3 id="editando-una-columna"><a href="#editando-una-columna" class="header-anchor">#</a> Editando una columna</h3> <p>Similarmente al comando <code>add</code>, también podemos usar el comando <code>edit</code> para cambiar el contenido de una columna a un nuevo valor. Abramos el mismo archivo para verlo en acción:</p> <div class="language- extra-class"><pre class="language-text"><code>open rustfmt.toml
+---------
+ edition 
+---------
+ 2018 
+---------
+</code></pre></div><p>y ahora, actualizemos la edición y que apunte a la siguiente edición que esperamos soportar:</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; open rustfmt.toml | edit edition 2021
+---------
+ edition 
+---------
+ 2021 
+---------
+</code></pre></div><h3 id="incrementando-valores"><a href="#incrementando-valores" class="header-anchor">#</a> Incrementando valores</h3> <p>Hay un comando más en Nu que nos ayudará a trabajar con números y versiones: <code>inc</code>.</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; open rustfmt.toml
+---------
+ edition 
+---------
+ 2018 
+---------
+&gt; open rustfmt.toml | inc edition
+---------
+ edition 
+---------
+ 2019 
+---------
+</code></pre></div><p>Como el valor en &quot;edition&quot; es un número, podemos usar <code>inc</code> para actualizarlo. <code>inc</code> realmente brilla cuando trabajamos con versiones:</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; open Cargo.toml | get package.version
+0.1.3
+&gt; open Cargo.toml | inc package.version --minor | get package.version
+0.2.0
+</code></pre></div><p>Cuando trabajamos con versiones podemos usar banderas e indicar cómo incrementar la versión:</p> <ul><li><strong>--major</strong> - incrementar major  (0.1.3 -&gt; 1.0.0)</li> <li><strong>--minor</strong> - incrementar minor  (0.1.3 -&gt; 0.2.0)</li> <li><strong>--patch</strong> - incrementar patch  (0.1.3 -&gt; 0.1.4)</li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/nushell/nushell/edit/master/docs/es/book/trabajando_con_tablas.md" target="_blank" rel="noopener noreferrer">Edita esta página en GitHub</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/es/book/cargando_datos.html" class="prev">
+        Cargando datos
+      </a></span> <span class="next"><a href="/es/book/pipeline.html">
+        El pipeline
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.c7787b3c.js" defer></script><script src="/assets/js/2.97f0a886.js" defer></script><script src="/assets/js/51.47d01690.js" defer></script>
+  </body>
+</html>
