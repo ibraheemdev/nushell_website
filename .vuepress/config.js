@@ -46,10 +46,6 @@ module.exports = {
         link: "/book/",
       },
       {
-        text: "Guide",
-        link: "/guide/",
-      },
-      {
         text: "Github",
         link: "https://github.com/nushell/nushell",
       },
@@ -60,13 +56,7 @@ module.exports = {
           title: "Book",
           collapsable: false,
         },
-      ],
-      "/guide/": [
-        {
-          title: "Guide",
-          collapsable: false,
-        },
-      ],
+      ]
     },
   },
   plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom"],
