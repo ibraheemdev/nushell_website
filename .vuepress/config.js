@@ -6,22 +6,22 @@ module.exports = {
       description: "A new type of shell.",
     },
     "/es/": {
-      lang: "Español",
+      lang: "es",
       title: "NuShell",
       description: "A new type of shell.",
     },
     "/ja/": {
-      lang: "日本語",
+      lang: "ja",
       title: "NuShell",
       description: "A new type of shell.",
     },
     "/pt-BR/": {
-      lang: "Português do Brasil",
+      lang: "pt-BR",
       title: "NuShell",
       description: "A new type of shell.",
     },
     "/zh-cn/": {
-      lang: "官话",
+      lang: "zh-cn",
       title: "NuShell",
       description: "A new type of shell.",
     },
@@ -35,21 +35,43 @@ module.exports = {
     ],
   ],
   themeConfig: {
-    repo: "",
-    editLinks: false,
-    docsDir: "",
-    editLinkText: "",
+    repo: "nushell/nushell",
+    repoLabel: "GitHub",
+    editLinks: true,
+    docsDir: "docs",
     lastUpdated: false,
-    nav: [
-      {
-        text: "Book",
-        link: "/book/",
+    locales: {
+      "/": {
+        selectText: "Languages",
+        label: "English",
+        editLinkText: "Edit this page on GitHub",
+        nav: [{ text: "Book", link: "/book/" }],
       },
-      {
-        text: "Github",
-        link: "https://github.com/nushell/nushell",
+      "/es/": {
+        selectText: "Idiomas",
+        label: "Español",
+        editLinkText: "Edita esta página en GitHub",
+        nav: [{ text: "Libro", link: "/es/book/" }],
       },
-    ],
+      "/ja/": {
+        selectText: "言語",
+        label: "日本語",
+        editLinkText: "GitHubでこのページを編集する",
+        nav: [{ text: "本", link: "/ja/book/" }],
+      },
+      "/pt-BR/": {
+        selectText: "Línguas",
+        label: "Português do Brasil",
+        editLinkText: "Edite esta página no GitHub",
+        nav: [{ text: "Livro", link: "/pt-BR/book/" }],
+      },
+      "/zh-cn/": {
+        selectText: "语言",
+        label: "中文",
+        editLinkText: "在GitHub上编辑此页面",
+        nav: [{ text: "书", link: "/zh-CN/book/" }],
+      },
+    },
     sidebar: {
       "/book/": [
         {
