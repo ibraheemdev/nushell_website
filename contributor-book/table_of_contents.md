@@ -1,11 +1,8 @@
 ---
-layout: content
 title: Table of Contents
-prev: Languages
-next: Introduction
-link_prev: /
-link_next: /en/introduction.html
 ---
+
+# Table of Contents
 
 * [Introduction](introduction.md) - An introduction to the contributor book
 * [Philosophy](philosophy.md) - The core design philosophy

@@ -8,7 +8,7 @@ Comandos são os blocos de construção para pipelines em Nu. Eles fazem a açã
 
 ## Comandos internos
 
-Todos os comandos dentro do Nu, incluindo plugins, são comandos internos. Comandos internos se comunicam usando streams dos tipos [Tagged<Value>](https://github.com/nushell/nushell/blob/d30c40b40ebfbb411a503ad7c7bceae8029c6689/crates/nu-source/src/meta.rs#L91) e [ShellError](https://github.com/nushell/nushell/blob/main/crates/nu-errors/src/lib.rs#L179)
+Todos os comandos dentro do Nu, incluindo plugins, são comandos internos. Comandos internos se comunicam usando streams dos tipos [`Tagged<Value>`](https://github.com/nushell/nushell/blob/d30c40b40ebfbb411a503ad7c7bceae8029c6689/crates/nu-source/src/meta.rs#L91) e [ShellError](https://github.com/nushell/nushell/blob/main/crates/nu-errors/src/lib.rs#L179)
 
 ### Signature
 

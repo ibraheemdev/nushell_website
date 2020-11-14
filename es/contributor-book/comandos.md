@@ -8,7 +8,7 @@ Los comandos son los bloques de construcción para las tuberías (pipeline) en N
 
 ## Comandos internos
 
-Todos los comandos dentro de Nu, incluyendo complementos (plugins), son comandos internos. Comandos internos se comunican entre ellos usando streams de Tagged<Value> y ShellError (TODO: Enlace a tipos de datos)
+Todos los comandos dentro de Nu, incluyendo complementos (plugins), son comandos internos. Comandos internos se comunican entre ellos usando streams de `Tagged<Value>` y ShellError (TODO: Enlace a tipos de datos)
 
 ### Firma
 

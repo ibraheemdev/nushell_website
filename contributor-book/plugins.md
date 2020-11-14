@@ -222,7 +222,7 @@ impl Len {
 
 This method will act over each element in the pipeline as it flows into our plugin. For our plugin, we really only care about strings so that we can return their length.
 
-We use Rust's pattern matching to check the type of the Value coming in, and then operate with it if it's a string. The value is a Tagged<Value> so it carries with it where the value came from. If the value isn't a string, we give an error and let the user know where the value came from that is causing the problem. (Note, if we had wanted to also put an error underline under the command name, we could get the `name_span` from the CallInfo given to `begin_filter`)
+We use Rust's pattern matching to check the type of the Value coming in, and then operate with it if it's a string. The value is a `Tagged<Value>` so it carries with it where the value came from. If the value isn't a string, we give an error and let the user know where the value came from that is causing the problem. (Note, if we had wanted to also put an error underline under the command name, we could get the `name_span` from the CallInfo given to `begin_filter`)
 
 Lastly, let's look at the top of the file:
 
@@ -384,5 +384,5 @@ and you are good to go.
 
 You can learn about creating a Nu plugin with C# here:
 
-* .Net Core nu-plugin-lib: (https://github.com/myty/nu-plugin-lib)
+* [.Net Core nu-plugin-lib](https://github.com/myty/nu-plugin-lib)
 

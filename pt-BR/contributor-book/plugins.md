@@ -222,7 +222,7 @@ impl Len {
 
 Esse método age sobre cada elemento no pipeline que é recebido pelo nosso plugin. Para o nosso plugin, nos preocupamos apenas com strings para poder retornar o seu tamanho.
 
-Usamos o pattern matching de Rust para verificar o tipo do Value recebido, e entã poderando com ele caso seja uma string. O valor é um Tagged<Value>, então ele armazena com ele de onde o valor surgiu. Se o valor não é um string, retornamos um erro e deixamos o usuário saber de onde veio o valor que está causando o problema. (Note que se quisessemos colocar um erro abaixo do nome do nome do comando, asta basta usar o `name_span` do CallInfo informado no `begin_filter`)
+Usamos o pattern matching de Rust para verificar o tipo do Value recebido, e entã poderando com ele caso seja uma string. O valor é um `Tagged<Value>`, então ele armazena com ele de onde o valor surgiu. Se o valor não é um string, retornamos um erro e deixamos o usuário saber de onde veio o valor que está causando o problema. (Note que se quisessemos colocar um erro abaixo do nome do nome do comando, asta basta usar o `name_span` do CallInfo informado no `begin_filter`)
 
 Por último, vamos ver o começo do arquivo:
 
