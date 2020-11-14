@@ -49,6 +49,7 @@ module.exports = {
         nav: [
           { text: "Book", link: "/book/" },
           { text: "Contributor Book", link: "/contributor-book/" },
+          { text: "Cookbook", link: "/cookbook/" },
         ],
         sidebar: {
           "/book/": [
@@ -92,6 +93,24 @@ module.exports = {
                 "metadata",
                 "plugins",
                 "shells",
+              ],
+            },
+          ],
+          "/cookbook/": [
+            {
+              title: "Cookbook",
+              collapsable: false,
+              children: [
+                "setup",
+                "help",
+                "system",
+                "parsing",
+                "native_shell_programs",
+                "files",
+                "git",
+                "parsing_git_log",
+                "http",
+                "misc"
               ],
             },
           ],
