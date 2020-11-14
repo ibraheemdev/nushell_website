@@ -50,6 +50,7 @@ module.exports = {
           { text: "Book", link: "/book/" },
           { text: "Contributor Book", link: "/contributor-book/" },
           { text: "Cookbook", link: "/cookbook/" },
+          { text: "Blog", link: "/blog/" },
         ],
         sidebar: {
           "/book/": [
@@ -110,7 +111,7 @@ module.exports = {
                 "git",
                 "parsing_git_log",
                 "http",
-                "misc"
+                "misc",
               ],
             },
           ],
