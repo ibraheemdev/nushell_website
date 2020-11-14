@@ -1,7 +1,4 @@
-# The Nu book
-The work-in-progress book for nushell
-
-Currently available are:
+# Table of Contents
 
 * [Installation](installation.md) - Installing nushell
 * [Introduction](introduction.md) - Getting started

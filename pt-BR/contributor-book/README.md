@@ -1,8 +1,4 @@
-# Livro de Contribuição do Nushell
-
-Os objetivos desse livro são ajudar os desenvolvedores a entender como Nu é projetado e desenvolvido e facilitar o inicio das contribuições.
-
-O esboço atual incluí:
+# Índice
 
 * [Introdução](introdução.md) - Uma introdução ao livro do contribuidor
 * [Filosofia](filosofia.md) - Filosofia central

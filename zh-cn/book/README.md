@@ -1,8 +1,4 @@
-# Nu 之书
-
-正在编写的 nushell 的参考书。
-
-目前可读：
+# 目录
 
 * [安装](installation.md) - 安装 nushell
 * [介绍](introduction.md) - 开始使用

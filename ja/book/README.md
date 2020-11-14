@@ -1,8 +1,4 @@
-# The Nu book
-
-nushell本は現在作成中です
-
-現在利用可能なものは次の通りです
+# 目次
 
 * [インストール](installation.md) - nushellのインストール
 * [はじめに](introduction.md) - nushellをはじめよう

@@ -1,8 +1,4 @@
-# El libro Nu. Puedes ver un demo en vivo aquí [book.nushell.sh](https://book.nushell.sh)
-
-El libro (en progreso) de nushell
-
-Actualmente disponible hay:
+# Índice
 
 * [Instalación](instalacion.md) - Instalando nushell
 * [Introducción](introduccion.md) - Empezando

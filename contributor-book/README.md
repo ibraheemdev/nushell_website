@@ -1,8 +1,4 @@
-# Nushell Contributor Book
-
-This book explains how Nu is designed so that it's easy for developers to jump in and contribute.
-
-The current draft includes:
+# Table of Contents
 
 * [Introduction](introduction.md) - An introduction to the contributor book
 * [Philosophy](philosophy.md) - The core design philosophy
