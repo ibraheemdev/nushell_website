@@ -2,17 +2,14 @@
   <div>
     <div v-for="post in posts">
       <section class="blog-post">
-        <time class="published">{{ post.path.slice(6, 16) }}</time>
+        <time class="published">{{ post.date }}</time>
         <h2 class="title">
-          <a v-bind:href="post.path" class="link">{{
-            post.title
-          }}</a>
+          <a v-bind:href="post.path" class="link">{{ post.title }}</a>
         </h2>
         <p v-if="post.frontmatter.excerpt" class="excerpt">
           {{ post.frontmatter.excerpt }}
         </p>
-        <a class="read-more" v-bind:href="post.path">
-          Read More →</a>
+        <a class="read-more" v-bind:href="post.path"> Read More →</a>
       </section>
     </div>
   </div>
@@ -27,10 +24,11 @@ export default {
         .filter((p) => {
           return p.path.indexOf("/blog/") >= 0 && p.path != "/blog/";
         })
-        .sort(
-          (a, b) =>
-            new Date(b.path.slice(6, 16)) - new Date(a.path.slice(6, 16))
-        );
+        .map((p) => {
+          let path = p.path.replace("/blog/", "");
+          return { ...p, path: path, date: path.substring(0, 10) };
+        })
+        .sort((a, b) => new Date(b.date) - new Date(a.date));
     },
   },
 };
