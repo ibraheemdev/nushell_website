@@ -4,7 +4,8 @@ const getFiles = (dir) => {
   return glob
     .sync(`${dir}/**/*.md`)
     .filter((f) => f != `${dir}/README.md`)
-    .map((f) => "/" + f);
+    .map((f) => "/" + f)
+    .sort();
 };
 
 console.log(getFiles("book"));
