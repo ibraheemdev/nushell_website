@@ -1,15 +1,3 @@
-const glob = require("glob");
-
-const getFiles = (dir) => {
-  return glob
-    .sync(`${dir}/**/*.md`)
-    .filter((f) => f != `${dir}/README.md`)
-    .map((f) => "/" + f)
-    .sort();
-};
-
-console.log(getFiles("book"));
-
 module.exports = {
   base: "/nushell_website/",
   locales: {
@@ -21,22 +9,22 @@ module.exports = {
     "/es/": {
       lang: "es",
       title: "NuShell",
-      description: "A new type of shell.",
+      description: "Un nuevo tipo de caparazón.",
     },
     "/ja/": {
       lang: "ja",
       title: "NuShell",
-      description: "A new type of shell.",
+      description: "新しいタイプのシェル。.",
     },
     "/pt-BR/": {
       lang: "pt-BR",
       title: "NuShell",
-      description: "A new type of shell.",
+      description: "Um novo tipo de concha.",
     },
     "/zh-cn/": {
       lang: "zh-cn",
       title: "NuShell",
-      description: "A new type of shell.",
+      description: "一种新型的外壳。.",
     },
   },
   head: [
@@ -67,14 +55,44 @@ module.exports = {
             {
               title: "Nu Book",
               collapsable: false,
-              children: getFiles("book"),
+              children: [
+                "installation",
+                "introduction",
+                "moving_around",
+                "types_of_data",
+                "loading_data",
+                "working_with_tables",
+                "pipeline",
+                "configuration",
+                "aliases",
+                "math",
+                "environment",
+                "metadata",
+                "shells_in_shells",
+                "escaping",
+                "plugins",
+                "coming_from_bash",
+                "nushell_map",
+                "nushell_map_imperative",
+                "nushell_map_functional",
+                "nushell_operator_map",
+              ],
             },
           ],
           "/contributor-book/": [
             {
               title: "Contributor Book",
               collapsable: false,
-              children: getFiles("contributor-book"),
+              children: [
+                "introduction",
+                "philosophy",
+                "values",
+                "commands",
+                "streams",
+                "metadata",
+                "plugins",
+                "shells",
+              ],
             },
           ],
         },
@@ -92,14 +110,41 @@ module.exports = {
             {
               title: "Nu Libro",
               collapsable: false,
-              children: getFiles("es/book"),
+              children: [
+                "instalacion",
+                "introduccion",
+                "explorando",
+                "tipos_de_datos",
+                "cargando_datos",
+                "trabajando_con_tablas",
+                "pipeline",
+                "configuracion",
+                "aliases",
+                "matematicas",
+                "entorno",
+                "metadatos",
+                "shells_en_shells",
+                "escapando",
+                "plugins",
+                "llegando_de_bash",
+                "mapa_nushell",
+                "mapa_imperativo_nushell",
+                "mapa_funcional_nushell",
+                "mapa_operador_nushell",
+              ],
             },
           ],
           "/es/contributor-book/": [
             {
               title: "Contributor Book",
               collapsable: false,
-              children: getFiles("es/contributor-book"),
+              children: [
+                "introduccion",
+                "filosofia",
+                "valores",
+                "comandos",
+                "metadatos",
+              ],
             },
           ],
         },
@@ -114,7 +159,20 @@ module.exports = {
             {
               title: "Nu 本",
               collapsable: false,
-              children: getFiles("ja/book"),
+              children: [
+                "installation",
+                "introduction",
+                "moving_around",
+                "types_of_data",
+                "loading_data",
+                "working_with_tables",
+                "pipeline",
+                "configuration",
+                "metadata",
+                "shells_in_shells",
+                "escaping",
+                "plugins",
+              ],
             },
           ],
         },
@@ -132,14 +190,35 @@ module.exports = {
             {
               title: "Nu Livro",
               collapsable: false,
-              children: getFiles("pt-BR/book"),
+              children: [
+                "instalacao",
+                "introducao",
+                "explorando",
+                "tipos_de_dados",
+                "carregando_dados",
+                "trabalhando_com_tabelas",
+                "pipeline",
+                "metadados",
+                "shells_em_shells",
+                "escapando",
+                "plugins",
+              ],
             },
           ],
           "/pt-BR/contributor-book/": [
             {
               title: "Contributor Book",
               collapsable: false,
-              children: getFiles("pt-BR/contributor-book"),
+              children: [
+                "introdução",
+                "filosofia",
+                "valores",
+                "comandos",
+                "streams",
+                "metadados",
+                "plugins",
+                "shells",
+              ],
             },
           ],
         },
@@ -154,7 +233,20 @@ module.exports = {
             {
               title: "Nu 书",
               collapsable: false,
-              children: getFiles("zh-cn/book"),
+              children: [
+                "installation",
+                "introduction",
+                "moving_around",
+                "types_of_data",
+                "loading_data",
+                "working_with_tables",
+                "pipeline",
+                "configuration",
+                "aliases",
+                "math",
+                "environment",
+                "metadata",
+              ],
             },
           ],
         },

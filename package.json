@@ -16,7 +16,5 @@
   "devDependencies": {
     "vuepress": "^1.7.1"
   },
-  "dependencies": {
-    "glob": "^7.1.6"
-  }
+  "dependencies": {}
 }
