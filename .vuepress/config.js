@@ -1,4 +1,5 @@
 module.exports = {
+  base: "/nushell_website/",
   locales: {
     "/": {
       lang: "English",
